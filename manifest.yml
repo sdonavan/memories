@@ -1,0 +1,13 @@
+---
+applications:
+- name: memories
+  host: memories
+  domain: eu-gb.mybluemix.net
+  path: .
+
+  memory: 60M
+  instances: 1
+  disk_quota: 100M
+  stack: cflinuxfs2
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  timeout: 180
